@@ -12,7 +12,9 @@
                     Cuisine Type
                 </button>
                 <div class="collapse mt-3" id="collapseExample">
-                    <button class="btn">cuisine</button>
+                    @for (cuisine of cuisineArray; track $index) {
+                    <button class="btn">{{cuisine}}</button>
+                    }
                 </div>
                 <!-- meal type -->
                 <br>
